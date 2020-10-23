@@ -62,7 +62,6 @@ class QueryableCollection<T> implements Queryable<T>, Serializable {
         this((Iterable<T>) toIterable(sourceStream));
     }
 
-    //    @Override
     public Iterator<T> iterator() {
         return sourceIterable.iterator();
     }
